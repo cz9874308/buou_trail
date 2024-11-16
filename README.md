@@ -27,6 +27,19 @@ bitget交易所需设置**双向持仓**
 电报：[联系我](https://t.me/buouqukuairiji)
 
 > 注意 ：配置文件改好参数之后重命名：config.template.json 改成 config.json
+>
+
+1. apt install -y git
+2. git clone 布偶的仓库.git
+3. cd 项目目录
+3. 修改 config.json 里你的交易所 apikey 和密码
+4. mkdir env && cd env
+5. python3 -m venv .
+6. cd ..
+7. source env/bin/activate
+8 . pip install -r requirements.txt
+9. mkdir log
+10. python 你对应交易所的.py
 
 ### 更新日志
 - **20241028**: 修复已平仓品种再次下单会秒平仓的 bug。
